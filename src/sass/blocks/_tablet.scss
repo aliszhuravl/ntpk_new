@@ -1,0 +1,205 @@
+@media (max-width: 1200px) {
+  .header_top {
+    display: none;
+  }
+  .header_mobile {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .gray_box {
+    flex-direction: column;
+    width: 100%;
+      &__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+      }
+  }
+  .tile_news .tile_item, .tile_article .tile_item, .tile_video .tile_item {
+    width: calc(50% - 16px);
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .content_inner {
+    margin-bottom: 32px;
+      .main_box {
+        margin-bottom: 32px;
+        height: 240px;
+          h1 {
+            max-width: 70%;
+          }
+      }
+  }
+  .footer__inner_top {
+    display: none;
+  }
+  .footer__inner_accordion {
+    border-top: 1px solid $color_border;
+    border-bottom: 1px solid $color_border;
+    padding: 0 32px;
+    display: block;
+  }
+  .burger {
+    display: block;
+    .hamburger {
+      display: block;
+    }
+  }
+  .header__inner .header_bottom .cart {
+    justify-content: flex-end;
+  }
+
+  .image50 {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+      .left {
+        margin-right: 0;
+        margin-bottom: 32px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+          img {
+            display: block;
+            width: auto;
+            min-width: 100%;
+            object-fit: cover;
+          }
+      }
+  }
+  .accordion__text {
+    font-size: calc(12px + (17 - 12) * ((100vw - 375px) / (1920 - 375))) !important;
+  }
+  .tile_categ__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .orders {
+    overflow: auto;
+    width: 100%;
+    &::-webkit-scrollbar { width: 3px; height: 3px;}
+    &::-webkit-scrollbar-button {  background-color: #666; }
+    &::-webkit-scrollbar-track {  background-color: #999;}
+    &::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+    &::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+    &::-webkit-scrollbar-corner { background-color: #999;}
+    &::-webkit-resizer { background-color: #666;}
+      .order_row {
+        width: 1030px;
+      }
+    .itogo {
+      margin-bottom: 32px;
+    }
+  }
+  .form_order .form__item, .form_order .form__textarea, .form_order .file {
+    width: 100%;
+    margin-right: 0;
+  }
+  .search_list li:hover .info_box {
+    display: none;
+  }
+
+  .tile_catalog .tile_item {
+    width: calc(50% - 16px);
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .style_listed {
+    .tile_item {
+      width: 100%;
+      margin-right: 0;
+      display: flex;
+      align-items: center;
+      &__img {
+        width: 30%;
+        padding: 32px;
+      }
+      &:nth-child(3n+3), &:nth-child(2n), &:nth-child(4n+4) {
+        margin-right: 0;
+      }
+    }
+  }
+  .contacts_tile {
+    flex-wrap: wrap;
+    &__item {
+      width: 50%;
+      margin-bottom: 32px;
+        &:last-child {
+          width: 100%;
+        }
+    }
+  }
+  .maps_container {
+    width: 100%;
+    flex-wrap: wrap;
+    .left, .right {
+      width: 100%;
+    }
+    .left {
+      margin-bottom: 20px;
+    }
+  }
+  .about_container .left_menu {
+    display: none;
+  }
+  .about_container .right_content {
+    width: 100%;
+  }
+  .text_about {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+      .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .right {
+        width: 100%;
+      }
+  }
+  .item_main {
+    width: 100%;
+    flex-direction: column;
+      .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+      .right {
+        width: 100%;
+      }
+  }
+  .calc .input_box {
+    width: calc(50% - 16px);
+    margin-right: 32px;
+    margin-bottom: 20px;
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+  }
+}

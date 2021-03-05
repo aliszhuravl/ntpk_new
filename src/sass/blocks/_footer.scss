@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+    &_accordion {
+      display: none;
+    }
+    &_top {
+      padding: 32px;
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+      background-color: $color_light;
+        .footer_item {
+          width: 33.333%;
+          margin-right: 32px;
+          .links_list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+              padding: 6px 0;
+            }
+          }
+        }
+    }
+    &_bottom {
+      padding: 32px;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+}

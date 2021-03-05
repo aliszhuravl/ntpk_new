@@ -1,0 +1,94 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 54px;
+  padding: 5px 24px;
+  border-radius: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $color-orange;
+  background-color: $color-orange;
+  color: #fff;
+  font-family: $font-family_medium;
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;
+
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: darken($color-orange, 5%);
+    background-color: darken($color-orange, 5%);
+  }
+  
+  &:active {
+    background-color: darken($color-orange, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_white {
+  background-color: #fff;
+  color: $color_orange;
+  border-color: $color_orange;
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color_orange;
+    background-color: $color_orange;
+    color: #fff;
+  }
+}
+
+.add {
+  border: 0;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color_border;
+  transition: all 0.3s ease-out;
+}
+
+a.btn {
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: transparent;
+}

@@ -1,0 +1,85 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+<script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 16);
+
+
+        var template = new YMaps.Template(
+                "<div style=\"width:280px;padding:10px;\"><b style=\"margin-bottom:20px;line-height: 24px;font-size:18px;\" >$[name]</b></div>\
+                <div style=\"width:280px;padding:10px;\"><a href=\"$[metaDataProperty.moreLink]\" style=\"color:#FF5F0E;line-height: 24px;\">Скачать схему проезда</a></div>");
+
+        var s = new YMaps.Style();
+        s.balloonContentStyle = new YMaps.BalloonContentStyle(template);
+        s.iconStyle = new YMaps.IconStyle();
+        s.iconStyle.href = "../img/pin.png";
+        s.iconStyle.size = new YMaps.Point(28, 42);
+
+
+        // Создает метку
+        var placemark1 = new YMaps.Placemark(new YMaps.GeoPoint(37.609218,55.753559),  {style: s} );
+
+        // Устанавливает содержимое балуна
+        placemark1.name = "г. Пушкин, Павильон Урицкого, д. 1, литер А6»";
+        placemark1.description = "+7 (812) 385-59-20";
+
+
+        //Добавляет метку на карту
+        map.addOverlay(placemark1);
+
+        // Открывает балун
+        placemark1.openBalloon();
+    });
+</script>
+<script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID2")[0]);
+
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 16);
+
+
+        var template = new YMaps.Template(
+                "<div style=\"width:280px;padding:10px;\"><b style=\"margin-bottom:20px;line-height: 24px;font-size:18px;\" >$[name]</b></div>\
+                <div style=\"width:280px;padding:10px;\"><a href=\"$[metaDataProperty.moreLink]\" style=\"color:#FF5F0E;line-height: 24px;\">Скачать схему проезда</a></div>");
+
+
+        var s = new YMaps.Style();
+        s.balloonContentStyle = new YMaps.BalloonContentStyle(template);
+        s.iconStyle = new YMaps.IconStyle();
+        s.iconStyle.href = "../img/pin.png";
+        s.iconStyle.size = new YMaps.Point(28, 42);
+
+
+        // Создает метку
+        var placemark1 = new YMaps.Placemark(new YMaps.GeoPoint(37.609218,55.753559),  {style: s} );
+
+        // Устанавливает содержимое балуна
+        placemark1.name = "г. п. Томилино, ул. Пионерская, стр. 1Г, офис 203";
+        placemark1.description = "+7 (495) 540-53-57";
+
+
+        //Добавляет метку на карту
+        map.addOverlay(placemark1);
+
+        // Открывает балун
+        placemark1.openBalloon();
+    });
+</script>
+<script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/slinky.min.js"></script>
+<script src="js/main.js"></script>

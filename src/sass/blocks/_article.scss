@@ -1,0 +1,137 @@
+.article {
+  margin-top: 20px;
+  max-width: 980px;
+  h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    line-height: 42px;
+    max-width: 980px;
+    color: #333;
+    text-transform: none;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 36px;
+    margin-top: 40px;
+    text-transform: none;
+    color: #333;
+  }
+
+  h3 {
+    font-family:  $font-family_bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    margin-top: 40px;
+    text-transform: none;
+    color: #333;
+  }
+  b {
+    font-family: $font-family_medium;
+  }
+  img {
+    margin: 25px 0;
+  }
+  p {
+    max-width: 980px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+  }
+  .q {
+    margin: 56px 0;
+    padding: 20px 40px;
+    max-width: 980px;
+    border-left: 2px solid $color-orange;
+    font-family: $font-family_medium;
+  }
+  ol {
+    margin-bottom: 20px;
+    counter-reset: myCounter;
+    padding: 0;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 8px;
+      &:before {
+        counter-increment: myCounter;
+        content:counter(myCounter)'.';
+        color: $color-orange;
+        margin: 0 16px 0 0;
+        font-family: $font-family_medium;
+      }
+    }
+  }
+  ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    list-style-type: none;
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      &:before {
+        width: 6px;
+        height: 6px;
+        background-color: $color-orange;
+        content: '';
+        margin: 0 16px 0 0;
+        position: absolute;
+        left: -25px;
+        top: 6px;
+      }
+    }
+  }
+  .lists {
+    margin: 25px 0;
+    display: flex;
+    ul {
+      margin-right: 32px;
+    }
+  }
+  .article_img {
+    width: 100%;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: stretch;
+    img {
+      margin-right: 32px;
+      display: block;
+      max-width: calc(50% - 16px);
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .time {
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
+
+.list-red {
+  margin-bottom: 20px;
+  padding-left: 25px;
+  list-style-type: none;
+  li {
+    margin-bottom: 16px;
+    position: relative;
+    opacity: 0.8;
+    font-family: $font-family_medium;
+    &:before {
+      width: 6px;
+      height: 6px;
+      background-color: $color-orange;
+      content: '';
+      margin: 0 16px 0 0;
+      position: absolute;
+      left: -25px;
+      top: 6px;
+    }
+  }
+}

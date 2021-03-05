@@ -1,0 +1,25 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: #333;
+  font-size: calc(13px + (18 - 13) * ((100vw - 375px) / (1920 - 375)));
+
+  &:hover {
+    color: $color-orange;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_orange {
+  color: $color_orange;
+    &:hover {
+      color: #333;
+    }
+}

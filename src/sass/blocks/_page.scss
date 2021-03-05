@@ -1,0 +1,45 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page__inner {
+  @extend .layout-inner;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.page__item {
+  @extend .layout-padding;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.content_inner {
+  width: 100%;
+  padding: 0 32px;
+  margin-bottom: 50px;
+    &__title {
+      margin-bottom: 24px;
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+}

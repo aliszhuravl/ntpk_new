@@ -1,0 +1,169 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+
+}
+
+/* Icons */
+@font-face
+{
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+  border-radius: 0;
+  color: transparent;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  content: '';
+  padding: 0;
+}
+.slick-next {
+
+}
+.slick-prev {
+
+}
+.slick-prev:hover,
+.slick-next:hover
+{
+
+}
+
+
+.slick-prev
+{
+  bottom: 500px;
+  right: 150px;
+}
+[dir='rtl'] .slick-prev
+{
+  right: -25px;
+  left: auto;
+}
+
+.slick-next
+{
+  bottom: 500px;
+  right: 100px;
+}
+[dir='rtl'] .slick-next
+{
+  right: auto;
+  left: -25px;
+}
+
+/* Dots */
+//mediatore e muto
+
+.slick-dotted.slick-slider
+{
+  margin-bottom: 30px;
+}
+
+.slick-dots
+{
+  position: absolute;
+  max-width: 1240px;
+  height: auto;
+  bottom: -100px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.slick-dots li
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 16px;
+  height: 2px;
+  opacity: 1;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+.slick-dots li button
+{
+  font-size: 0;
+  line-height: 0;
+  position: static;
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #E5E5E5;
+  transition: all 0.4s ease-in-out;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  outline: none;
+  background-color: $color-orange;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+  opacity: 1;
+}
+.slick-dots li button:before
+{
+  display: none;
+}
+.slick-dots li.slick-active
+{
+  background-color: $color-orange;
+  opacity: 1;
+  width: 16px;
+  height: 2px;
+}
+
+.slick-dots li.slick-active button {
+  width:16px;
+  transition: all 0.4s ease-in-out;
+  background-color: $color-orange;
+}
+
+.slider-buttons-wrapper {
+  display: flex;
+  position: relative;
+  @extend .layout-inner;
+  margin: 0 auto;
+  height: 50px;
+  bottom: 180px;
+}
+
+.slider-buttons {
+  margin-left: auto;
+  margin-top: -33px;
+  width: 100px;
+  height: 50px;
+}

@@ -1,0 +1,197 @@
+@media (max-width: 640px) {
+  .header__inner .header_bottom {
+    padding: 0 20px;
+  }
+  .header {
+    margin-bottom: 8px;
+  }
+  .header_mobile {
+    padding: 0 20px;
+  }
+  .content_inner {
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  .content_inner .main_box {
+    padding: 20px;
+      h1, p {
+        max-width: 100%;
+      }
+      h1 {
+        margin-bottom: 14px;
+      }
+  }
+  .header__inner .header_bottom .search {
+    padding: 7px 0;
+  }
+
+  .main_box_box {
+    padding: 0;
+  }
+  .header_mobile__inner .logo {
+    width: 45px;
+  }
+  .header__inner .header_bottom .catalog {
+    display: none;
+  }
+  .header__inner .header_bottom .cart {
+    width: 30%;
+  }
+  .header__inner .header_bottom .search .loop {
+    top: 26px;
+    right: 9px;
+      img {
+        width: 12px;
+      }
+  }
+
+  .text-image {
+    flex-direction: column;
+    width: 100%;
+      .left {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 14px;
+          img {
+            width: 100%;
+          }
+      }
+  }
+  .no_padding {
+    padding: 0;
+      .gray_box__item {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+  }
+  .list li {
+    padding: 6px 0;
+  }
+  .tile_news .tile_item, .tile_article .tile_item, .tile_video .tile_item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+      &:last-child {
+        margin-bottom: 12px;
+      }
+      &:nth-child(2n), &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+  }
+  .tile_article .tile_item .image {
+    margin-bottom: 12px;
+  }
+  .menu_wrapper {
+    top: 69px;
+    height: calc(100vh - 69px);
+  }
+  .image50 {
+    .left {
+      height: auto;
+    }
+  }
+  .short {
+    max-width: 100%;
+  }
+
+  .tile_categ__item {
+    width: 100%;
+    margin-bottom: 20px;
+    .head {
+      height: 80px;
+      padding: 12px;
+    }
+  }
+  .tile_categ__item .body_box {
+    padding: 0 12px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .tile_catalog .tile_item {
+    width: 100%;
+    margin-right: 0;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .pagination {
+    justify-content: space-between;
+      .pages {
+        margin: 0;
+      }
+  }
+  .contacts_tile {
+    flex-wrap: wrap;
+    &__item {
+      width: 100%;
+      margin-bottom: 32px;
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+  .about_container .right_content__box .rc_title {
+    padding: 20px 12px;
+  }
+  .about_contacts {
+    flex-direction: column;
+      .ac_box {
+        width: 100%;
+        margin-bottom: 20px;
+          .text_16 {
+            margin-bottom: 6px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+      }
+  }
+  .add_info {
+    width: 100%;
+    flex-direction: column;
+    .quantity {
+      width: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+        .qtt {
+          margin-right: 0;
+          width: fit-content;
+        }
+    }
+    .price {
+      .text-18 {
+        font-size: 18px;
+      }
+    }
+  }
+  .item_main .right .buttons {
+    flex-direction: column;
+    width: 100%;
+      .btn {
+        width: 100%;
+        margin-right: 0;
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+  }
+  .calc .input_box {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+  .descr_lines {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
