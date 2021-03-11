@@ -21,6 +21,7 @@
     &__img {
       width: 100%;
       padding: 32px;
+      position: relative;
        img {
          display: block;
          width: 100%;
@@ -228,4 +229,16 @@
         }
       }
     }
+}
+
+.sale {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: $color_orange;
+}
+
+.present {
+  font-size: 14px;
 }

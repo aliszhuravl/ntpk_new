@@ -2171,6 +2171,7 @@ ol li::before {
 }
 
 .tile_item__img {
+	position: relative;
 	width: 100%;
 	padding: 32px;
 }
@@ -2388,6 +2389,18 @@ ol li::before {
 .tile_categ__item .body_box ul li {
 	margin-bottom: 0;
 	padding: 6px 0;
+}
+
+.sale {
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #ff5f0e;
+}
+
+.present {
+	font-size: 14px;
 }
 
 /* Slider */
@@ -4605,6 +4618,14 @@ ol li::before {
 	max-width: 100%;
 	margin-top: 30px;
 	margin-bottom: 40px;
+}
+
+}
+
+@media (max-height: 799px) {
+
+.sidebar_inner__body .button_box {
+	display: none;
 }
 
 }

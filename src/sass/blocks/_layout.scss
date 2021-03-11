@@ -62,3 +62,9 @@
     padding-right: 0;
   }
 }
+
+@media (max-height: 799px) {
+  .sidebar_inner__body .button_box {
+    display: none;
+  }
+}
