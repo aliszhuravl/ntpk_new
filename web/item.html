@@ -101,7 +101,7 @@
 
                         </div>
                         <div class="button_box">
-                            <button class="btn">Заказать консультацию</button>
+                            <a class="btn"  href="#modal" rel="modal:open">Заказать консультацию</a>
                         </div>
                     </div>
                 </div>
@@ -210,10 +210,10 @@
                                 <div class="delivery">
                                     <p class="text_14 mb_12">Рассчитать стоимость доставки:</p>
                                     <div class="delivery_items">
-                                        <a href="#" class="delivery_items__item">
+                                        <a href="#modal" rel="modal:open" class="delivery_items__item">
                                             <img src="img/pek.jpg" alt="">
                                         </a>
-                                        <a href="#" class="delivery_items__item">
+                                        <a href="#modal" rel="modal:open" class="delivery_items__item">
                                             <img src="img/dl.jpg" alt="">
                                         </a>
                                     </div>
@@ -713,6 +713,18 @@
             </div>
         </div>
     </div>
+    <div class="popup_wrapper">
+        <div class="popup" id="modal">
+            <div class="close-modal"><div class="round_link"><img src="img/cross.svg" alt="x"></div></div>
+            <div class="popup_inner">
+                <div class="popup_inner__body">
+                    <h3>Пример всплывающего окна</h3>
+                        <p class="text_16 mb_20">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические</p>
+                        <button class="btn" type="submit">Кнопка</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
@@ -798,6 +810,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
 <script src="js/libs/slinky.min.js"></script>
+<script src="js/libs/jquery.modal/jquery.modal.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

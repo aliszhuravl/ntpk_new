@@ -2,25 +2,24 @@
   margin-top: 20px;
   max-width: 980px;
   h1 {
-    font-size: 36px;
+    font-size: calc(18px + (28 - 18) * ((100vw - 375px) / (1920 - 375)));
     margin-bottom: 25px;
-    line-height: 42px;
+    line-height: initial;
     max-width: 980px;
     color: #333;
     text-transform: none;
   }
   h2 {
-    font-size: 30px;
+    font-size: calc(16px + (25 - 16) * ((100vw - 375px) / (1920 - 375)));
+    line-height: initial;
     margin-bottom: 20px;
-    line-height: 36px;
     margin-top: 40px;
     text-transform: none;
     color: #333;
   }
 
   h3 {
-    font-family:  $font-family_bold;
-    font-size: 24px;
+    font-size: calc(16px + (22 - 16) * ((100vw - 375px) / (1920 - 375)));
     margin-bottom: 15px;
     line-height: 30px;
     margin-top: 40px;
@@ -36,8 +35,7 @@
   p {
     max-width: 980px;
     margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: calc(14px + (18 - 14) * ((100vw - 375px) / (1920 - 375)));
     letter-spacing: 0.02em;
   }
   .q {
