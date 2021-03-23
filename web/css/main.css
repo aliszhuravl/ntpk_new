@@ -913,6 +913,20 @@ h3 {
 	outline: 0;
 }
 
+.error {
+	border-color: red;
+}
+
+.error::-webkit-input-placeholder {
+	transition: color .3s;
+	color: red;
+}
+
+.error::-moz-placeholder {
+	transition: color .3s;
+	color: red;
+}
+
 /* fuck ie */
 
 .internet-explorer .page__inner {

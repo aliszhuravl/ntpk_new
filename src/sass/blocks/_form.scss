@@ -71,3 +71,10 @@
     border-color: transparent;
   }
 }
+
+.error {
+  border-color: red;
+
+  &::-webkit-input-placeholder {transition: color .3s; color: red;}
+  &::-moz-placeholder          {transition: color .3s; color: red;}
+}
