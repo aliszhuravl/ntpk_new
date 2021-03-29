@@ -78,3 +78,357 @@
   &::-webkit-input-placeholder {transition: color .3s; color: red;}
   &::-moz-placeholder          {transition: color .3s; color: red;}
 }
+
+.calc_dl {
+  max-width: -webkit-fill-available !important;
+
+  .loadimg{
+    position:absolute;
+    z-index:1000;
+    display:none;
+  }
+  .over{
+    position: fixed;
+    left: 0;
+    top: -35px;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.85;
+    display:none;
+    width: 328px;
+    height: 395px;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+  body {
+    color: #111;
+    font-size: 14px;
+    margin:0;
+    background: #ffffff;
+  }
+  input[type="text"]{
+    margin: 4px 6px 8px 0;
+    padding: 0 0 0 8px;
+    height: 50px;
+    border: 1px solid $color_border;
+    color: #1f1f1f;
+
+    font-size: 13px;
+  }
+  input[type="text"]:focus{
+    outline: none;
+      outline: 0;
+      border-color: $color-orange;
+  }
+
+
+  input[type=text][disabled]:hover{
+    cursor: pointer;
+  }
+  select[disabled] {
+    background-color: rgb(235, 235, 228);
+    cursor: pointer;
+    border: 1px solid $color_border;
+    border-radius: 0;
+
+  }
+  input[type="checkbox"] {
+    margin: 5px 1px 3px 1px;
+    position: relative;
+    top: 2px;
+  }
+  input[type=checkbox][disabled]:hover{
+    cursor: pointer;
+  }
+  .place::-webkit-input-placeholder { color:red; }
+  .place:-moz-placeholder { color:red; }
+
+  .place2{
+    background: #FFBFBF !important;
+    border: 1px solid #FF9999 !important;
+    color: red !important;
+  }
+  .logo{
+    display: block;
+    margin: 10px auto 13px;
+    width: 200px;
+  }
+  .main{
+    border: 1px solid #CCC;
+    width: 330px;
+  }
+  .little{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .mini{
+    width: 58px;
+    height: 50px;
+    display: block;
+    float: left;
+    display: block;
+  }
+  .second{
+    float:left;
+    width: 111px;
+    margin-right: 12px;
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+          input {
+            margin-bottom: 0;
+            min-width: 80px;
+          }
+      }
+  }
+  .clear {
+    clear: both;
+  }
+  .bottom_gray{
+    color: #AAA;
+    text-align: left;
+    font-size: 11px;
+    display: inline-block;
+    line-height: 95%;
+    padding-top: 5px;
+  }
+  .gray{
+    color: #898A8C;
+    text-align: left;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 100%;
+  }
+  .second_right{
+    float:left;
+    width: 200px;
+    margin-top: 8px;
+
+  }
+  .second_right a{
+    display: inline;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    width: 175px;
+    color: #2685D1;
+    font-size: 13px;
+  }
+  .strah{
+  }
+  .korotki{
+    width: 99px;
+  }
+  .select {
+    background: url(../arrow.png) no-repeat right white;
+    width: 200px;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -o-appearance: none;
+    border: 1px solid $color_border;
+    margin: 3px;
+    padding: 4px 12px;
+    display: inline-block;
+    text-indent: 0.01px;
+    text-overflow: '';
+    color: #1F1F1F;
+  }
+  .select::-ms-expand {
+    display: none;
+    appearance: none;
+
+  }
+  .button{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+    border-color: $color-orange;
+    background-color: $color-orange;
+    color: #fff;
+    font-family: $font-family_medium;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    outline-style: none;
+  }
+  .button :active{
+    outline-style: none;
+    padding: 1em;
+
+  }
+  .abz{
+    display: inline-block;
+    padding: 7px 7px 3px 0;
+    font-size: 13px;
+  }
+  .labbot{
+    font-size: 11px;
+    margin: 2px auto;
+    display: block;
+    width: 265px;
+  }
+  .gray{
+    color: #777777;
+  }
+  .form_big{
+    width: 190px;
+  }
+  .inside{
+
+    position: relative;
+    width: 290px;
+    background: #fff;
+    color: #3c3c3c;
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+  }
+  .border_top{
+    border-top: 6px solid #666;
+    margin: 0;
+    padding: 0;
+    width: 292px;
+  }
+  .line_border{
+    background: url(../bottom_bg1.png) repeat-x -6px 0;
+    height: 8px;
+    margin: -1px 0 0;
+    width: 292px;
+    background-position: center;
+  }
+  .pr{
+    font-size: 13px;
+    display: inline-block;
+    width: 35%;
+    margin-left: 14px;
+  }
+  .pr1{
+    font-size: 24px;
+  }
+  .pr2{
+    font-size: 17px;
+  }
+  .pr3{
+
+    font-size: 13px;
+    display: inline-block;
+    width: 58%;
+    margin-left: 14px;
+  }
+  .isay{
+    position: relative;
+    top: 2px;
+    right: -3px;
+    cursor: pointer;
+  }
+  .gray_mini{
+    font-size: 11px;
+    color: gray;
+  }
+
+  #tooltip
+  {
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+    font-size: 10px;
+  }
+
+  #tooltip:after /* triangle decoration */
+  {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #111;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+  }
+
+  #tooltip.top:after
+  {
+    border-top-color: transparent;
+    border-bottom: 10px solid #111;
+    top: -20px;
+    bottom: auto;
+  }
+
+  #tooltip.left:after
+  {
+    left: 10px;
+    margin: 0;
+  }
+
+  #tooltip.right:after
+  {
+    right: 10px;
+    left: auto;
+    margin: 0;
+  }
+  #mod_con{
+    position: absolute;
+    top:25%;
+    left:16px;
+    z-index: 200;
+  }
+  #modal1{
+    height: 146px;
+    margin-top: 7px;
+  }
+  #modal2{
+    height: 121px;}
+
+  #example2{
+    margin-top: 20px;
+    margin-bottom : 5px;
+  }
+  .inside{
+
+    position: relative;
+    width: 303px;
+    background: #fff;
+    color: #3c3c3c;
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+  }
+  .border_top{
+    border-top: 6px solid #666;
+    margin: 0;
+    padding: 0;
+    width: 305px;
+  }
+  .line_border{
+    background: url(../bottom_bg1.png) repeat-x -6px 0;
+    height: 8px;
+    margin: -1px 0 0;
+    width: 305px;
+    background-position: center;
+  }
+  .mt16{
+    margin-bottom: 16px;
+  }
+  .h55{
+    height: 55px;
+  }
+  .grayplace{
+    color:#777777!important;
+  }
+  div#strahovka input[type="checkbox"] {
+    margin: -3px 0 3px 1px;
+    position: relative;
+    top: 2px;
+    left: 19px;
+    display: inline;
+    vertical-align: middle;
+  }
+}

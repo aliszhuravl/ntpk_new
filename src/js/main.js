@@ -9,3 +9,4 @@
 //= parts/_filters.js
 //= parts/_tabs.js
 //= parts/_fancybox.js
+//= parts/_widget.js

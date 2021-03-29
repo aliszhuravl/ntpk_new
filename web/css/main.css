@@ -927,6 +927,398 @@ h3 {
 	color: red;
 }
 
+.calc_dl {
+	max-width: -webkit-fill-available !important;
+}
+
+.calc_dl .loadimg {
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+.calc_dl .over {
+	position: fixed;
+	z-index: 999;
+	top: -35px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	width: 328px;
+	height: 395px;
+	margin-top: 2px;
+	margin-left: 2px;
+	opacity: .85;
+	background-color: white;
+}
+
+.calc_dl body {
+	font-size: 14px;
+	margin: 0;
+	color: #111;
+	background: #fff;
+}
+
+.calc_dl input[type='text'] {
+	font-size: 13px;
+	height: 50px;
+	margin: 4px 6px 8px 0;
+	padding: 0 0 0 8px;
+	color: #1f1f1f;
+	border: 1px solid #e5e5e5;
+}
+
+.calc_dl input[type='text']:focus {
+	border-color: #ff5f0e;
+	outline: none;
+	outline: 0;
+}
+
+.calc_dl input[type=text][disabled]:hover {
+	cursor: pointer;
+}
+
+.calc_dl select[disabled] {
+	cursor: pointer;
+	border: 1px solid #e5e5e5;
+	border-radius: 0;
+	background-color: #ebebe4;
+}
+
+.calc_dl input[type='checkbox'] {
+	position: relative;
+	top: 2px;
+	margin: 5px 1px 3px 1px;
+}
+
+.calc_dl input[type=checkbox][disabled]:hover {
+	cursor: pointer;
+}
+
+.calc_dl .place::-webkit-input-placeholder {
+	color: red;
+}
+
+.calc_dl .place:-moz-placeholder {
+	color: red;
+}
+
+.calc_dl .place2 {
+	color: red !important;
+	border: 1px solid #f99 !important;
+	background: #ffbfbf !important;
+}
+
+.calc_dl .logo {
+	display: block;
+	width: 200px;
+	margin: 10px auto 13px;
+}
+
+.calc_dl .main {
+	width: 330px;
+	border: 1px solid #ccc;
+}
+
+.calc_dl .little {
+	font-size: 13px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+.calc_dl .mini {
+	display: block;
+	display: block;
+	float: left;
+	width: 58px;
+	height: 50px;
+}
+
+.calc_dl .second {
+	float: left;
+	width: 111px;
+	margin-right: 12px;
+}
+
+.calc_dl .second div {
+	display: flex;
+	margin-bottom: 8px;
+	align-items: center;
+}
+
+.calc_dl .second div input {
+	min-width: 80px;
+	margin-bottom: 0;
+}
+
+.calc_dl .clear {
+	clear: both;
+}
+
+.calc_dl .bottom_gray {
+	font-size: 11px;
+	line-height: 95%;
+	display: inline-block;
+	padding-top: 5px;
+	text-align: left;
+	color: #aaa;
+}
+
+.calc_dl .gray {
+	font-size: 13px;
+	line-height: 100%;
+	display: inline-block;
+	text-align: left;
+	color: #898a8c;
+}
+
+.calc_dl .second_right {
+	float: left;
+	width: 200px;
+	margin-top: 8px;
+}
+
+.calc_dl .second_right a {
+	font-size: 13px;
+	display: inline;
+	width: 175px;
+	text-decoration: none;
+	color: #2685d1;
+	border-bottom: 1px dotted;
+}
+
+.calc_dl .korotki {
+	width: 99px;
+}
+
+.calc_dl .select {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin: 3px;
+	padding: 4px 12px;
+	text-indent: .01px;
+	text-overflow: '';
+	color: #1f1f1f;
+	border: 1px solid #e5e5e5;
+	background: url(../arrow.png) no-repeat right white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+}
+
+.calc_dl .select::-ms-expand {
+	display: none;
+	appearance: none;
+}
+
+.calc_dl .button {
+	font-family: 'Montserrat-Medium', 'Arial', serif;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #fff;
+	border-color: #ff5f0e;
+	outline-style: none;
+	background-color: #ff5f0e;
+}
+
+.calc_dl .button :active {
+	padding: 1em;
+	outline-style: none;
+}
+
+.calc_dl .abz {
+	font-size: 13px;
+	display: inline-block;
+	padding: 7px 7px 3px 0;
+}
+
+.calc_dl .labbot {
+	font-size: 11px;
+	display: block;
+	width: 265px;
+	margin: 2px auto;
+}
+
+.calc_dl .gray {
+	color: #777;
+}
+
+.calc_dl .form_big {
+	width: 190px;
+}
+
+.calc_dl .inside {
+	position: relative;
+	width: 290px;
+	color: #3c3c3c;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: #fff;
+}
+
+.calc_dl .border_top {
+	width: 292px;
+	margin: 0;
+	padding: 0;
+	border-top: 6px solid #666;
+}
+
+.calc_dl .line_border {
+	width: 292px;
+	height: 8px;
+	margin: -1px 0 0;
+	background: url(../bottom_bg1.png) repeat-x -6px 0;
+	background-position: center;
+}
+
+.calc_dl .pr {
+	font-size: 13px;
+	display: inline-block;
+	width: 35%;
+	margin-left: 14px;
+}
+
+.calc_dl .pr1 {
+	font-size: 24px;
+}
+
+.calc_dl .pr2 {
+	font-size: 17px;
+}
+
+.calc_dl .pr3 {
+	font-size: 13px;
+	display: inline-block;
+	width: 58%;
+	margin-left: 14px;
+}
+
+.calc_dl .isay {
+	position: relative;
+	top: 2px;
+	right: -3px;
+	cursor: pointer;
+}
+
+.calc_dl .gray_mini {
+	font-size: 11px;
+	color: gray;
+}
+
+.calc_dl #tooltip {
+	font-size: 10px;
+	position: absolute;
+	z-index: 100;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	background: #111;
+}
+
+.calc_dl #tooltip:after {
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -10px;
+	content: '';
+	border-top: 10px solid #111;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent;
+}
+
+.calc_dl #tooltip.top:after {
+	top: -20px;
+	bottom: auto;
+	border-top-color: transparent;
+	border-bottom: 10px solid #111;
+}
+
+.calc_dl #tooltip.left:after {
+	left: 10px;
+	margin: 0;
+}
+
+.calc_dl #tooltip.right:after {
+	right: 10px;
+	left: auto;
+	margin: 0;
+}
+
+.calc_dl #mod_con {
+	position: absolute;
+	z-index: 200;
+	top: 25%;
+	left: 16px;
+}
+
+.calc_dl #modal1 {
+	height: 146px;
+	margin-top: 7px;
+}
+
+.calc_dl #modal2 {
+	height: 121px;
+}
+
+.calc_dl #example2 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.calc_dl .inside {
+	position: relative;
+	width: 303px;
+	color: #3c3c3c;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	background: #fff;
+}
+
+.calc_dl .border_top {
+	width: 305px;
+	margin: 0;
+	padding: 0;
+	border-top: 6px solid #666;
+}
+
+.calc_dl .line_border {
+	width: 305px;
+	height: 8px;
+	margin: -1px 0 0;
+	background: url(../bottom_bg1.png) repeat-x -6px 0;
+	background-position: center;
+}
+
+.calc_dl .mt16 {
+	margin-bottom: 16px;
+}
+
+.calc_dl .h55 {
+	height: 55px;
+}
+
+.calc_dl .grayplace {
+	color: #777 !important;
+}
+
+.calc_dl div#strahovka input[type='checkbox'] {
+	position: relative;
+	top: 2px;
+	left: 19px;
+	display: inline;
+	margin: -3px 0 3px 1px;
+	vertical-align: middle;
+}
+
 /* fuck ie */
 
 .internet-explorer .page__inner {
@@ -4497,7 +4889,7 @@ ol li::before {
 .page__inner,
 .slider-buttons-wrapper {
 	width: 100%;
-	min-width: 320px;
+	min-width: 375px;
 	max-width: 640px;
 }
 
