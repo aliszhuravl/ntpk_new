@@ -2088,6 +2088,100 @@ a.btn {
 	flex: 1;
 }
 
+.call_body p {
+	max-width: 320px;
+}
+
+.call_body .btn {
+	width: 100%;
+}
+
+.info_buble {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 100%;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+	min-width: 100%;
+	max-width: 420px;
+	padding: 24px;
+	transition: all .3s;
+	opacity: 0;
+	background-color: #fff;
+	box-shadow: 10px 10px 27px 3px rgba(0, 0, 0, .1);
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.info_buble__inner {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.info_buble__inner .left {
+	width: 40%;
+	margin-right: 24px;
+}
+
+.info_buble__inner .left img {
+	display: block;
+	width: 100%;
+}
+
+.info_buble__inner .right .ib_name {
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+
+.info_buble__inner .right .bigger {
+	font-size: 18px;
+}
+
+.info_buble p {
+	font-size: 12px;
+}
+
+.info_buble p:first-child {
+	font-family: 'Montserrat-Medium', 'Arial', serif;
+}
+
+.search {
+	position: relative;
+}
+
+.search .info_buble {
+	top: 100%;
+	right: 0;
+	left: auto;
+}
+
+.search:focus .ib_search {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search:focus-within .ib_search {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search:active .ib_search {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search .ib_element {
+	top: 0 !important;
+	left: 100% !important;
+}
+
 .bar_box {
 	display: flex;
 	width: 100%;
@@ -4277,13 +4371,6 @@ ol li::before {
 	background-color: #fff;
 }
 
-.popup video {
-	display: block;
-	width: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-}
-
 .popup_inner {
 	width: 100%;
 	padding: 40px;
@@ -4293,16 +4380,12 @@ ol li::before {
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 }
 
 .popup_inner__body h3 {
-	text-align: center;
-}
-
-.popup_inner__body p {
-	text-align: center;
+	margin-top: 0;
 }
 
 .visible_popup {
@@ -5167,6 +5250,12 @@ ol li::before {
 
 .popup_inner {
 	padding: 20px;
+}
+
+.search .info_buble {
+	top: 100%;
+	right: auto;
+	left: auto;
 }
 
 }
