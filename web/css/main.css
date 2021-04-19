@@ -2673,13 +2673,20 @@ ol li::before {
 
 .tile_item__img {
 	position: relative;
+	display: flex;
 	width: 100%;
+	min-height: 264px;
 	padding: 32px;
+	align-items: center;
+	justify-content: center;
 }
 
 .tile_item__img img {
 	display: block;
 	width: 100%;
+	max-height: 200px;
+	-o-object-fit: contain;
+	object-fit: contain;
 }
 
 .tile_item__text {
@@ -2695,8 +2702,14 @@ ol li::before {
 
 .tile_item__text .item_descr {
 	font-size: calc(10px + (14 - 10) * ((100vw - 375px) / (1920 - 375)));
+	line-height: 18px;
+	display: -webkit-box;
+	overflow: hidden; /* fallback */
+	max-height: 90px;
 	margin-bottom: 14px;
-	opacity: .7;
+	text-overflow: ellipsis;
+	opacity: .7; /* fallback */
+	-webkit-line-clamp: 5; /* number of lines to show */
 }
 
 .tile_item__text .item_price {

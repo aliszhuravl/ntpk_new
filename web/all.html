@@ -432,18 +432,18 @@
 
 
         // Создает метку
-        var placemark1 = new YMaps.Placemark(new YMaps.GeoPoint(37.609218,55.753559),  {style: s} );
+        var placemark2 = new YMaps.Placemark(new YMaps.GeoPoint(37.609218,55.753559),  {style: s} );
 
         // Устанавливает содержимое балуна
-        placemark1.name = "г. п. Томилино, ул. Пионерская, стр. 1Г, офис 203";
-        placemark1.description = "+7 (495) 540-53-57";
+        placemark2.name = "г. п. Томилино, ул. Пионерская, стр. 1Г, офис 203";
+        placemark2.description = "+7 (495) 540-53-57";
 
 
         //Добавляет метку на карту
-        map.addOverlay(placemark1);
+        map.addOverlay(placemark2);
 
         // Открывает балун
-        placemark1.openBalloon();
+        placemark2.openBalloon();
     });
 </script>
 <script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
