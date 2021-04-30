@@ -2182,6 +2182,20 @@ a.btn {
 	left: 100% !important;
 }
 
+.tile_item.slick-slide {
+	min-height: 473px;
+}
+
+.category_list {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.category_list .cat_list {
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+
 .bar_box {
 	display: flex;
 	width: 100%;
@@ -4025,6 +4039,20 @@ ol li::before {
 	display: block;
 }
 
+.tabs__content img {
+	display: block;
+	width: auto;
+	max-height: 400px;
+	margin: 0 auto;
+}
+
+.tabs__buttons li img {
+	display: block;
+	width: auto;
+	max-height: 120px;
+	margin: 0 auto;
+}
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 
 .fancybox-wrap,
@@ -4673,6 +4701,16 @@ ol li::before {
 	margin-right: 0;
 }
 
+.category_list {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.category_list .cat_list {
+	-webkit-column-count: 4;
+	column-count: 4;
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -4963,6 +5001,16 @@ ol li::before {
 
 .calc .input_box:nth-child(2n) {
 	margin-right: 0;
+}
+
+.category_list {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.category_list .cat_list {
+	-webkit-column-count: 2;
+	column-count: 2;
 }
 
 }
@@ -5269,6 +5317,16 @@ ol li::before {
 	top: 100%;
 	right: auto;
 	left: auto;
+}
+
+.category_list {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.category_list .cat_list {
+	-webkit-column-count: 1;
+	column-count: 1;
 }
 
 }

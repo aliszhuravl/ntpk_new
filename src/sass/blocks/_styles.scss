@@ -565,6 +565,18 @@
   }
 }
 
+.tile_item.slick-slide {
+  min-height: 473px;
+}
+
+.category_list {
+  width: 100%;
+  margin-bottom: 40px;
+    .cat_list {
+      column-count: 3;
+    }
+}
+
 @media (min-width: 1500px) {
   .tile_catalog {
     .tile_item {
@@ -590,6 +602,13 @@
       &:nth-child(3n+3), &:nth-child(2n), &:nth-child(4n+4) {
         margin-right: 0;
       }
+    }
+  }
+  .category_list {
+    width: 100%;
+    margin-bottom: 40px;
+    .cat_list {
+      column-count: 4;
     }
   }
 }

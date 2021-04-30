@@ -213,4 +213,11 @@
     right: auto;
     left: auto;
   }
+  .category_list {
+    width: 100%;
+    margin-bottom: 30px;
+    .cat_list {
+      column-count: 1;
+    }
+  }
 }

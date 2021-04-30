@@ -80,3 +80,17 @@
       display: block;
     }
 }
+
+.tabs__content img {
+  display: block;
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.tabs__buttons li img {
+  display: block;
+  width: auto;
+  max-height: 120px;
+  margin: 0 auto;
+}
