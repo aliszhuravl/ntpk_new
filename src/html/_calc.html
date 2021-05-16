@@ -3,126 +3,13 @@
         <div class="close-modal"><div class="round_link"><img src="img/cross.svg" alt="x"></div></div>
         <div class="popup_inner">
             <div class="popup_inner__body">
-                <form id="form" action="https://widgets.dellin.ru/calculator/" method="GET">
-                    <div class="inpt" id="derival_point">
-                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="form_big rem ui-autocomplete-input" value="" placeholder="Город отправки" maxlength="50" minlength="5" name="derival_point_cod" id="derival_point_cod" autocomplete="off">
-                        <input type="hidden" class="form_big" value="" placeholder="Город отправки" maxlength="50" minlength="5" name="derival_point_code" id="derival_point_code">
-                        <input type="checkbox" id="derival_checkbox">
-                        <label class="gray" id="derival_label" onclick="$(&#39;#derival_checkbox&#39;).click()">От адреса</label>
-                    </div>
-                    <div class="inpt" id="arrival_point">
-                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" class="form_big rem ui-autocomplete-input" value="" placeholder="Город доставки" maxlength="50" minlength="5" name="arrival_point_cod" id="arrival_point_cod" autocomplete="off">
-                        <input type="hidden" class="form_big" value="" placeholder="Город доставки" maxlength="50" minlength="1" name="arrival_point_code" id="arrival_point_code">
-                        <input type="checkbox" id="arrival_checkbox" checked="">
-                        <label class="gray" id="arrival_label" onclick="$(&#39;#arrival_checkbox&#39;).click()">До адреса</label>
-                    </div>
-
-                    <div class="second_box">
-                        <div class="second" id="sized">
-                            <div>
-                                <input type="text" class="mini rem" placeholder="Вес" maxlength="36" minlength="1" oninput="this.value=proverka(this.value)" name="sized_weight" value="" id="sized_weight"><label class="little" id="kg">кг</label>
-                            </div>
-                            <div>
-                                <input type="text" class="mini rem" placeholder="Объём" maxlength="36" minlength="1" oninput="this.value=proverka(this.value)" name="sized_volume" value="" id="sized_volume"><label class="little" id="m3" style="margin-top: 6px;">м<sup>3</sup></label>
-                            </div>
-                        </div>
-                        <div class="second_right" id="sized_negab">
-                            <div id="negab" class="negab" style="display: none; position: absolute;width: 190px;background: #eeeeee; z-index: 2; margin-top: -7px; border: 1px solid #E5E5E5; margin-top: -4px; left: 119px;">
-                                <label style="display: block; margin-left: 8px;color:#1f1f1f;font-size:12px; font-weight:bold;margin-top: 5px;">Негабаритные грузоместа</label>
-                                <div style="float: left;">
-                                    <input type="text" class="mini rem" name="vesn" placeholder="Вес" oninput="this.value=proverka(this.value)" id="sized_neg" style="margin-left: 6px;"><label class="little" id="s_kg">кг</label>
-                                </div>
-                                <div>
-                                    <input type="text" class="mini rem" name="obne" placeholder="Объём" oninput="this.value=proverka(this.value)" id="volume_neg" style="margin-left: 6px;"><label class="little" id="s_m3" style="margin-top: 6px;">м<sup>3</sup></label>
-                                </div>
-                                <a href="javascript:void(0)" onclick="$(&#39;#negab&#39;).hide(0);$(&#39;input[name=vesn]&#39;).val(&#39;&#39;).removeClass(&#39;place&#39;).css({background: &#39;white&#39;,border: &#39;1px solid #c5c5c5&#39;,color: &#39;#1F1F1F&#39;});$(&#39;input[name=obne]&#39;).val(&#39;&#39;).removeClass(&#39;place&#39;).css({background: &#39;white&#39;,border: &#39;1px solid #c5c5c5&#39;,color: &#39;#1F1F1F&#39;});$(&#39;input[name=vesn]&#39;).removeAttr(&#39;maxlength&#39;,&#39;36&#39;).removeAttr(&#39;minlength&#39;,&#39;1&#39;); $(&#39;input[name=obne]&#39;).removeAttr(&#39;maxlength&#39;,&#39;36&#39;).removeAttr(&#39;minlength&#39;,&#39;1&#39;)" style="position: absolute; right: 2px; top: 2px;width: 10px;border-bottom: none;color: #AAA;font-size:10px;">X</a>
-                            </div>
-                            <a href="javascript:void(0)" class='link link_orange' id="hre" onclick="$(&#39;#negab&#39;).show(0);$(&#39;input[name=vesn]&#39;).attr(&#39;maxlength&#39;,&#39;36&#39;).attr(&#39;minlength&#39;,&#39;1&#39;); $(&#39;input[name=obne]&#39;).attr(&#39;maxlength&#39;,&#39;36&#39;).attr(&#39;minlength&#39;,&#39;1&#39;)"> Есть негабаритные места</a><br>
-                            <span class="bottom_gray light_gray">место считается негабаритным, если вес места более 100кг или одно из измерений равно или более 3м</span>
-
-                        </div>
-                    </div>
-                    <div id="loadImg" class="loadimg">
-                        <label style="font-weight: bold; display: block;margin-bottom: 10px;" id="lab">Пожалуйста, подождите</label>
-                        <img id="loadIm" src="./Калькулятор_files/ajax-loader.gif" style="margin-left: 50px;">
-                    </div>
-                    <div class="strah">
-                        <div id="strahovka">
-                            <label class="abz" id="abz1"><b>Страхование</b></label>
-                            <div class="clear"></div>
-                            <input type="checkbox" name="strahov" id="check" checked="checked" style="display: none;">
-                            <label class="gray strah_margin" id="dis">Объявленная стоимость</label>
-                            <input type="text" class="korotki rem" name="strah2" id="strah" onclick="checkon();" style="margin-left: 6px;" value="0">
-                            <label style="color: #242525;font-size: 13px;" id="rub">р.</label>
-                        </div>
-                    </div>
-                    <div id="upakovka">
-                        <label class="abz" id="abz2" style="margin-right: -5px;">Упаковка</label><img style="margin-right: 5px;" class="isay" src="./Калькулятор_files/icon-hint.png" id="tooltip-right" data-toggle="tooltip" data-placement="right" title="" data-original-title="Упаковка Деловых Линий или стандартная упаковка от производителя">
-
-                        <select class="select" id="upakovka1" name="upakovka1">
-                            <option id="1" value="">От производителя</option>
-                            <option id="2" value="0xBAA65B894F477A964D70A4D97EC280BE">Паллетный борт</option>
-                            <option id="7" value="0X9DD8901B0ECEF10C11E8ED001199BF71">Комплекс «палетный борт + амортизация»  (только до терминала-получателя)</option>
-                            <option id="3" value="0x838FC70BAEB49B564426B45B1D216C15">Деревянная обрешётка</option>
-                            <option id="8" value="0X9DD8901B0ECEF10C11E8ED001199BF6E">Комплекс «обрешётка + амортизация»</option>
-                            <option id="4" value="0xAD22189D098FB9B84EEC0043196370D6">Мешки</option>
-                            <option id="5" value="0x9A7F11408F4957D7494570820FCF4549">Дополнительная упаковка</option>
-                            <option id="6" value="0xA8B42AC5EC921A4D43C0B702C3F1C109">Воздушно-пузырьковая пленка</option>
-                            <option id="9" value="0X9DD8901B0ECEF10C11E8ED001199BF6F">Спец. упаковка для автостекол</option>
-                            <option id="10" value="0X9DD8901B0ECEF10C11E8ED001199BF70">Спец. упаковка для автозапчастей</option>
-                        </select>
-                    </div>
-
-                    <div class="clear"></div>
-                    <div class="h55">
-                        <input type="text" style="display:none;" name="length" value="" id="length">
-                        <input type="text" style="display:none;" name="width" value="" id="width">
-                        <input type="text" style="display:none;" name="height" value="" id="height">
-
-                        <input type="button" class="button btn" id="example1" onclick="checkOut();" value="Стоимость и срок доставки"><!-- вызывает функцию рассчета  -->
-
-
-                        <div style="display: none;">
-
-                            <div class="box-modal" id="exampleModal1">
-                                <div style="margin: 135px 11px 0;" id="vert">
-                                    <div class="border_top"></div>
-                                    <div class="inside">
-                                        <div class="box-modal_close arcticmodal-close" id="close">×</div>
-                                        <div class="clear" style="height: 16px;"></div>
-                                        <div id="modal1" style="display: block;">
-                                            <label style="margin-left: 4px;display: inline-block;margin-top: 10px;"><b class="pr">Стоимость*</b></label><b class="pr1" style="float: right;padding-right: 19px;"></b><br>
-                                            <div class="border_down" style="border-bottom: dotted 1px;margin-left: 19px;margin-bottom: 10px;margin-right: 19px;"></div>
-                                            <div id="ifzero"><label style="margin-left: 4px;"><b class="pr3">Срок доставки*</b></label><b class="pr2" style="float: right;padding-right: 19px;"></b><br>
-                                                <div class="border_down" style="border-bottom: dotted 1px;margin-left: 19px;margin-right: 19px;"></div></div>
-                                            <div id="just" style="margin-top: 0px; margin-left: 0px; background: white; height:60px;">
-                                                <a href="https://widgets.dellin.ru/calculator/" target="_blank" id="example21" style="text-decoration: none; cursor:pointer;margin-top: 10px;display:block;"><button class="button" type="submit" id="example2" style="width: 267px;"><label style="cursor:pointer;">Заказать перевозку</label></button></a> <!-- отправка на сайт расчета  -->
-                                                <label class="labbot" style="width: 235px;"><sup>*</sup>Указан ориентировочный срок и стоимость</label>
-                                            </div>
-                                        </div>
-                                        <div id="modal2" style="display: none;">
-                                            <label style="float: left; margin-top: 10px;"><b class="pr" style="font-size: 12px;margin-left: 19px;">Доставка</b></label><div style="float: right; margin-top: 10px; margin-bottom: -3px; padding-right: 19px;"><b class="pr1" style="font-size: 16px;"></b> &nbsp;<b class="pr2" style="font-size: 16px;"></b><br></div>
-                                            <div class="clear" style="height: 0px;"></div>
-                                            <div class="border_down" style="border-bottom: dotted 1px;margin-left: 19px;margin-right: 19px;"></div>
-                                            <div id="just2" style="margin-top: 0px; margin-left: 0px; background: white; height:60px;">
-                                                <a href="https://widgets.dellin.ru/calculator/" target="_blank" id="example22" style="text-decoration: none; cursor:pointer;margin-top: 10px;display:block;"><button class="button" type="submit" id="example2" style="width: 267px;"><label style="cursor:pointer;">Заказать перевозку</label></button></a> <!-- отправка на сайт расчета  -->
-                                                <label class="labbot" style="width: 235px;"><sup>*</sup>Указан ориентировочный срок и стоимость</label>
-                                            </div>
-                                        </div>
-                                        <div id="modal3" style="display: none;font-size: 12px;">
-                                            <div style="margin-left: 19px; margin-bottom: 19px;">Расчет стоимости невозможен</div>
-                                            <div id="erro" style="margin-left: 19px; margin-bottom: 0px; padding-bottom: 19px;"></div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="line_border"></div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div></form>
+                <iframe
+                        src="https://widgets.dellin.ru/calculator?derival_to_door=off&arrival_to_door=on&disabled_calculation=off&insurance=0&package=1"
+                        width="332"
+                        height="390"
+                        scrolling="no"
+                        frameborder="0">
+                </iframe>
             </div>
         </div>
     </div>
