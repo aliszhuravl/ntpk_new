@@ -2264,7 +2264,7 @@ a.btn {
 
 .accordion__item_open .accordion__content {
 	overflow: auto;
-	max-height: 200px;
+	max-height: 210px;
 }
 
 .accordion__item_open .accordion__content::-webkit-scrollbar {
@@ -2405,8 +2405,14 @@ a.btn {
 	position: absolute;
 	left: 0;
 	overflow: hidden;
+	cursor: pointer;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+.accordion__text:hover {
+	transition: all .2s;
+	color: #ff5f0e;
 }
 
 .acc_text {
@@ -2929,6 +2935,16 @@ ol li::before {
 
 .present {
 	font-size: 14px;
+}
+
+.tile_item__text .item_price {
+	position: absolute;
+	bottom: 20px;
+	padding-top: 20px;
+}
+
+.tile_item__text .item_descr {
+	margin-bottom: 40px;
 }
 
 /* Slider */

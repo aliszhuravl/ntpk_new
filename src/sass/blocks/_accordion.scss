@@ -97,6 +97,7 @@
 }
 
 .accordion__text {
+  cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -104,6 +105,10 @@
   font-weight: normal;
   left: 0;
   position: absolute;
+  &:hover {
+    color: $color_orange;
+    transition: all 0.2s;
+  }
 }
 
 .acc_text {

@@ -255,3 +255,13 @@
 .present {
   font-size: 14px;
 }
+
+.tile_item__text .item_price {
+  position: absolute;
+  padding-top: 20px;
+  bottom: 20px;
+}
+
+.tile_item__text .item_descr {
+  margin-bottom: 40px;
+}
